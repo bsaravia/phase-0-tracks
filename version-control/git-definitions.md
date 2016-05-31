@@ -10,3 +10,5 @@
   * A commit is basically a save point and needs to be done before any pulling or pushing can happen. A good commit message is very specific and clear not just to the author but to everyone.
 * What is a merge conflict?
   * A situation in which the different versions of your project cannot be reconciled due to directly conflicting modifications. These must be resolved manually.
+
+hello
