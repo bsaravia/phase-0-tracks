@@ -1,20 +1,40 @@
-
-
-
+/* 
 
 * { outline: 1px solid red; }
 
+ */
+
 .container {
-    mposition: relative;
+	display: block;
+    position: relative;
+    margin: 0 auto;
 }
-
-
 
 #octopus{
-	width: 500px;
-	margin:auto;
-	z-index: -3
+	display: block;
+	position: absolute;
+	top: 100px;
+    left: 470px;
+	z-index: 1
+}	
+
+#glasses{
+	display: block;
+	position: absolute;
+    top: 198px;
+    left: 513px;
+	z-index: 2
 }
+
+#hat{
+	display: block;
+	position: absolute;
+    top: 50px;
+    left: 445px;
+	z-index: 3
+}
+
+/*
 
 #glasses{
 	position: absolute;
@@ -29,3 +49,6 @@
     left: 0px;
 	z-index: -1
 }
+
+*/
+
