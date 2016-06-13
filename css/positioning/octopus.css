@@ -1,0 +1,31 @@
+
+
+
+
+* { outline: 1px solid red; }
+
+.container {
+    mposition: relative;
+}
+
+
+
+#octopus{
+	width: 500px;
+	margin:auto;
+	z-index: -3
+}
+
+#glasses{
+	position: absolute;
+    top: 154px;
+    left: 62px;
+	z-index: -2
+}
+
+#hat{
+	position: absolute;
+    top: 0px;
+    left: 0px;
+	z-index: -1
+}
