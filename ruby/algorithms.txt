@@ -1,0 +1,8 @@
+This algorithm assumes a ton of things such as a built in people avoidance system, sensors of every type, advanced motors, etc. Essentially a person except for the brain. 
+
+Walk towards elevator door
+If you want to go up, press the up call button
+If you want to go down, press the down call button
+Wait for elevator to arrive, open doors
+Walk in towards the panel of floor numbers
+
