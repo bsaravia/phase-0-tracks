@@ -1,1 +1,65 @@
-.
+This algorithm assumes a ton of things such as a built in people avoidance system, sensors of every type, advanced motors, etc. Essentially a person except for the brain. 
+
+Walk towards elevator door
+
+If you want to go up:
+	if there exists a call up button
+		until door is open, do:
+			walk up to call buttons
+			press call up button
+			step back
+			loop until 15 seconds have passed
+				if door opens and there is space inside
+					exit child and parent loop
+				end
+				wait 1 second
+			end
+			curse loudly
+		end
+
+	else
+		sit on the floor and cry
+	end
+
+else If you want to go down:
+	if there exists a call down button
+		until door is open, do:
+			walk up to call buttons
+			press call down button
+			step back
+			loop until 15 seconds have passed
+				if door opens and there is space inside
+					exit child and parent loop
+				end
+				wait 1 second
+			end
+			curse loudly
+		end
+
+	else
+		sit on the floor and cry
+	end
+
+end
+
+enter the elevator, locate buttons panel and walk in front of it
+analyze all the buttons, assign them corresponding values
+
+
+until you leave elevator
+
+	if button (starting with first) equal to desired floor
+		press it
+	elseif move on to next button (make a loop)
+	end
+
+	wait for elevator to open on the floor you want then exit (loop and elevator)
+	if not, wait (10*# of floors) seconds then run above loop again, up to 5 times
+
+	if that doesnt work,
+	live the rest of your life in this elevator
+	find purpose in life by becoming elevator operator
+
+end
+
+walk out, whistling awkwardly 
