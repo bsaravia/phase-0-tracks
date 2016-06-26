@@ -17,10 +17,14 @@ client_hash[:budget] = gets.chomp.to_i
 puts "Thanks. Now please input the type of pet"
 client_hash[:pet] = gets.chomp
 
-# puts client_hash.keys
+puts "Here are your responses: #{client_hash}"
+puts "If you need to correct a previous response, please type one of the following. If not, please enter 'none'"
 
-puts "Thanks! If you need to correct a previous response, please type one of the following (without the colon): #{client_hash.keys.to_s}. If not, please enter 'none'"
+client_hash.each_key{|x| puts x.to_s}
 hash_key = gets.chomp
+
+# puts "Thanks! If you need to correct a previous response, please type one of the following (without the colon): #{client_hash.keys.to_s}. If not, please enter 'none'"
+
 
 if hash_key != ("none" || "NONE")
 	puts "So what should it be changed to?"
@@ -28,4 +32,4 @@ if hash_key != ("none" || "NONE")
 end
 
 puts client_hash
-#client_hash
+# client_hash
