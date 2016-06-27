@@ -1,6 +1,5 @@
-
 futbol_championships = [
-	copa_america: {
+	copa_america = {
 		year: 2016,
 		host: "USA",
 		total_teams: 16,
@@ -8,67 +7,67 @@ futbol_championships = [
 		date_end: "June 26th, 2016",
 		active_teams: ["Argentina", "Chile"],
 		countries: [
-			Argentina: {
+			argentina = {
 					group: "Group D", 
 					active: true
 				},
-			Bolivia: {
+			bolivia = {
 					group: "Group D", 
 					active: false
 				},
-			Brazil: {
+			brazil = {
 					group: "Group B", 
 					active: false				
 				},
-			Chile: {
+			chile = {
 					group: "Group D", 
 					active: true				
 				},
-			Colombia: {
+			colombia = {
 					group: "Group A", 
 					active: false				
 				},
-			Ecudador: {
+			Ecudador =  {
 					group: "Group B", 
 					active: false				
 				},
-			Paraguay: {
+			Paraguay =  {
 					group: "Group A", 
 					active: false				
 				},
-			Peru: {
+			Peru = {
 					group: "Group B", 
 					active: false				
 				},
-			Uruguay: {
+			Uruguay = {
 					group: "Group C", 
 					active: false				
 				},
-			Venezuela: {
+			Venezuela = {
 					group: "Group C", 
 					active: false				
 				},
-			United_States: {
+			United_States = {
 					group: "Group A", 
 					active: false				
 				},
-			Mexico: {
+			Mexico = {
 					group: "Group C", 
 					active: false				
 				},
-			Costa_Rica: {
+			Costa_Rica = {
 					group: "Group A", 
 					active: false				
 				},
-			Jamaica: {
+			Jamaica = {
 					group: "Group C", 
 					active: false				
 				},
-			Haiti: {
+			Haiti = {
 					group: "Group B", 
 					active: false				
 				},
-			Panama: {
+			Panama = {
 					group: "Group D", 
 					active: false				
 				}
@@ -77,7 +76,7 @@ futbol_championships = [
 		
 	},
 
-	euro: {
+	euro = {
 		year: 2016,
 		host: "France",
 		total_teams: 24,
@@ -187,3 +186,41 @@ futbol_championships = [
 	}
 
 ]
+
+# puts futbol_championships[0][:year]
+# puts futbol_championships[0][:total_teams]
+# puts futbol_championships[0][:host]
+# puts futbol_championships[0][:date_start]
+# puts futbol_championships[0][:date_end]
+# puts futbol_championships[0][:active_teams]
+# puts futbol_championships[0][:countries]
+
+# puts futbol_championships[1][:year]
+# puts futbol_championships[1][:total_teams]
+# puts futbol_championships[1][:host]
+# puts futbol_championships[1][:date_start]
+# puts futbol_championships[1][:date_end]
+# puts futbol_championships[1][:active_teams]
+# puts futbol_championships[1][:countries]
+
+# puts futbol_championships[0][:year].class
+# puts futbol_championships[0][:total_teams].class
+# puts futbol_championships[0][:host].class
+# puts futbol_championships[0][:date_start].class
+# puts futbol_championships[0][:date_end].class
+# puts futbol_championships[0][:active_teams].class
+# puts futbol_championships[0][:countries].class
+
+
+puts futbol_championships[0][:winner] = "TBD"
+# puts futbol_championships[0][:active_teams]
+# futbol_championships[0][:countries].map! do |country| 
+# 	 puts country	# puts country[:active]= false
+#end
+
+futbol_championships[0][:countries][0]
+# puts futbol_championships[0][:countries].keys[1]
+
+
+# puts futbol_championships[0][:countries][]
+#not done
