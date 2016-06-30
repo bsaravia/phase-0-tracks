@@ -105,3 +105,17 @@ list_printer(release3)
 
 add_or_update_item(release3, "Ice-Cream", 1)
 list_printer(release3)
+
+# Release 5: Reflect
+# What did you learn about pseudocode from working on this challenge?
+#   - I learned that it is actually very important for interviews and therefore shouldn't be ignored
+# What are the tradeoffs of using arrays and hashes for this challenge?
+#   - We used a hash so it's hard to compare definitively but a hash allows you to set the quantity of each items much easier. Arrays on the other hand are very easy to cycle through.
+# What does a method return?
+#   - It returns the value of its last expression 
+# What kind of things can you pass into methods as arguments?
+#   - You can pass pretty much all the different classes (arrays, strings, etc) as well as things that evaluate to those such as another method that returns a string, for example
+# How can you pass information between methods?
+#   - You can make a global variable, use nested methods, or use a separate variable to pull info from one method and feed it to another 
+# What concepts were solidified in this challenge, and what concepts are still confusing?
+#   - Learned more about how to pass information among methods but still haven't really gotten good at knowing when to use global variables
