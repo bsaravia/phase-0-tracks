@@ -1,0 +1,58 @@
+Release 2:
+
+1.
+
+sqlite> SELECT * FROM food;
+
+1|bananas|true|1
+2|milk|true|4
+3|eggs|false|3
+4|mango|true|1
+5|kale|false|2
+
+2.
+
+UPDATE food SET like="true" WHERE name="kale";
+
+[no ouput]
+
+3.
+
+sqlite> SELECT * FROM food, types WHERE food.type_id = types.id;
+
+1|bananas|true|1|1|fruit
+2|milk|true|4|4|dairy
+3|eggs|false|3|3|protein
+4|mango|true|1|1|fruit
+5|kale|true|2|2|vegetables
+
+4.
+
+sqlite> SELECT food.name, types.name, food.like FROM food JOIN types ON food.type_id = types.id;
+
+bananas|fruit|true
+milk|dairy|true
+eggs|protein|false
+mango|fruit|true
+kale|vegetables|true
+
+
+5.
+
+sqlite> DELETE FROM food WHERE like="false";
+
+[no output so check using command below]
+
+sqlite> SELECT food.name, types.name, food.like FROM food JOIN types ON food.type_id = types.id;
+
+bananas|fruit|true
+milk|dairy|true
+mango|fruit|true
+kale|vegetables|true
+
+
+Release 3:
+
+1.
+
+2.
