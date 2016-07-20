@@ -53,6 +53,30 @@ kale|vegetables|true
 
 Release 3:
 
-1.
+1. There are many types of SQL joins including INNER JOIN, 
+(LEFT, RIGHT, or FULL) OUTER JOIN, NATURAL JOIN, CROSS JOIN, and SELF JOIN. 
+Not all of them are available for SQLite however. The main SQLite joins are
+INNER JOIN and LEFT OUTER JOIN and you can apply different conditions to them. 
+
+https://stackoverflow.com/questions/17946221/sql-join-and-different-types-of-joins/20298671#20298671
+The link above has some pretty good diagrams for different types of joins
 
 2.
+
+To test, I added a row without all the columns:
+sqlite> INSERT INTO food (name, like) VALUES ("honey","true");
+
+sqlite> SELECT food.name, food.like, types.name FROM food JOIN types ON food.type_id=types.id;
+bananas|true|fruit
+milk|true|dairy
+mango|true|fruit
+kale|true|vegetables
+
+sqlite> SELECT food.name, food.like, types.name FROM food LEFT OUTER JOIN types ON food.type_id=types.id;
+bananas|true|fruit
+milk|true|dairy
+mango|true|fruit
+kale|true|vegetables
+honey|true|
+
+
